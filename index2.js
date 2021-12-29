@@ -26,7 +26,7 @@ function GenerateToken(Proxy) {
             }
             await PPage.click("#app-mount > div > div > div.grid-3Ykf_K.heroBackground-3m0TRU > div.row-3wW-Fx.heroContainer-3j1eQg > div > div.ctaContainer-3vWJHU > button");
             await sleep(1000);
-            await PPage.type("input.username-27KRPU", Math.random().toString(36).substring(2, 7) + " | .gg/cloneressling\n");
+            await PPage.type("input.username-27KRPU", Math.random().toString(36).substring(2, 7) + " | horror\n");
             await PPage.waitForSelector("iframe");
             console.log("[CAPTCHA DETECTED] " + Proxy);
             startTime = Date.now();
